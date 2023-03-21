@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramesh Kanna S</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topmost-container" id="home">
+      <header>
+        <nav>
+          <a href="#home" id="logo"><img src="images/Ramesh.gif" alt="logo" class="logo"></a>
+          <i class="fas fa-bars" id="ham-menu"></i>
+          <ul id="nav-bar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+              <li> <a href="#services">Certifications</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="Resume.pdf" target="-blank">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="top-container">
+          <h1>Hi I'm<br><span> Ramesh </span>Kanna S,<br></h1>
+            <p>I design and code simple things, and I love what I do.</p>
+        </div>
+        </div>
+
+        <!--------- About Seaction ------------------->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="column-1">
+                <img src="images/Ramesh_pic.jpg"> 
+              </div>
+              <div class="column-2">
+                <h1 class="about-h1">About Me</h1>
+                <p>
+                  Hey there,This is <span>Ramesh Kanna S.</span><br>
+                  Enthusiastic engineering graduate with a knowledge in coding and design and
+                  Ability to learn new software and technologies quickly. 
+          Capability to work in teams by providing valuable support.
+                </p>
+               <div class="about-li">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links " onclick="opentab('skill')"> Skill</p>
+                <p class="tab-links " onclick="opentab('practise')"> Practise</p>
+<!-- 
+                //  <button id="button1" class="tab-links" onclick="">Education</button>
+                //  <button id="button2" class="tab-links">Skill</button>
+                // <button id="button3" class="tab-links">Practise</button> -->
+
+               </div>
+               <div class="about-content active-tab" id="education">
+                <ul>
+                  <li><span>B.Tech-Computer Science And Engineering-75%</span><br><a target="-blank"href="https://www.sastra.edu/" style="color:#ababab">Sastra Deemed University,Thanjavur,<br>2019-2023.</a></li>
+                  <li><span>HSC-76.4%</span><br>Nava Bharath Vidyalaya(CBSE),<br>2018-2019.</li>
+                  <li><span>SSC-82%</span><br>Nava Bharath Vidyalaya(CBSE),<br>2016-2017</li>
+                </ul>
+
+               </div>
+               <div class="about-content" id="skill">
+                <ul>
+                  <li><span>Programming Languages</span><br>&nbsp;Python,C,C++,SQL</li>
+                  <li><span>Scripting</span><br>HTML,CSS,JavaScript</li>
+                  <li><span>FrameWorks</span><br>React.js,Django,Bootstap</li>
+                </ul>
+
+               </div>
+               <div class="about-content" id="practise">
+                <ul>
+                  <li><span><a target="-blank"href="https://leetcode.com/rameshs03/">Leetcode-Click here</span></a><br>
+                  solved 200+ problems</li>
+                  <li><span><a target="-blank"href="https://www.hackerrank.com/rameshkanna410">Hackerrank-Click here</a></span><br>
+                  Obtained Certificates</li>
+                </ul>
+               </div> 
+             </div>
+            </div>     
+        </div>
+        </div> 
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -11,44 +11,53 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/79905de36e.js" crossorigin="anonymous"></script>
+   
+  
   </head>
   <body>
-    <div class="topmost-container" id="home">
-      <header>
+    <div id="header">
+      <div class="containers">
         <nav>
           <a href="#home" id="logo"><img src="images/Ramesh.gif" alt="logo" class="logo"></a>
-          <i class="fas fa-bars" id="ham-menu"></i>
-          <ul id="nav-bar">
+          <ul id="sidemenu"> 
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-              <li> <a href="#services">Certifications</a></li>
-              <li><a href="#project">Projects</a></li>
+              <li> <a href="#certificates">Certifications</a></li>
+              <li><a href="#projects">Projects</a></li>
               <li><a href="Resume.pdf" target="-blank">Resume</a></li>
               <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-          </header>
-          <div class="top-container">
-          <h1>Hi I'm<br><span> Ramesh </span>Kanna S,<br></h1>
-            <p>I design and code simple things, and I love what I do.</p>
-        </div>
-        </div>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" id="ham-menu" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="top-container">
+        <h1>Hi I'm<br><span> Ramesh </span>Kanna S,<br></h1>
+          <p>I design and code simple things, and I love what I do.</p>
+      </div>
+    </div>
+
 
         <!--------- About Seaction ------------------->
         <div id="about">
           <div class="container">
             <div class="row">
               <div class="column-1">
-                <img src="images/Ramesh_pic.jpg"> 
+                <img src="images/Ramesh_pic.jpg" class="profile"> 
               </div>
               <div class="column-2">
                 <h1 class="about-h1">About Me</h1>
                 <p>
                   Hey there,This is <span>Ramesh Kanna S.</span><br>
-                  Enthusiastic engineering graduate with a knowledge in coding and design and
+                   A recent engineering graduate with a knowledge in coding and design <br>
                   Ability to learn new software and technologies quickly. 
-          Capability to work in teams by providing valuable support.
+          <!-- Capability to work in teams by providing valuable support. -->
+          <!-- A recent engineering graduate who had interest in design, development and coding and the ability to pick up new technologies and applications faster. -->
                 </p>
                <div class="about-li">
                 <p class="tab-links active-link" onclick="opentab('education')">Education</p>
@@ -78,9 +87,9 @@
                </div>
                <div class="about-content" id="practise">
                 <ul>
-                  <li><span><a target="-blank"href="https://leetcode.com/rameshs03/">Leetcode-Click here</span></a><br>
+                  <li><span><a target="-blank"href="https://leetcode.com/rameshs03/">Leetcode</span>&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a><br>
                   solved 200+ problems</li>
-                  <li><span><a target="-blank"href="https://www.hackerrank.com/rameshkanna410">Hackerrank-Click here</a></span><br>
+                  <li><span><a target="-blank"href="https://www.hackerrank.com/rameshkanna410">Hackerrank</span>&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a><br>
                   Obtained Certificates</li>
                 </ul>
                </div> 
@@ -88,6 +97,130 @@
             </div>     
         </div>
         </div> 
-    <script src="script.js"></script>
-  </body>
+        <hr style="z-index: -9;">
+  
+        <!-- -------certificate ----------------- -->
+ 
+ 
+          <div id="certificates" >
+            <div class="container">
+            <div class="certifacte-container" id="certificate">
+              
+              <center>
+                <h1 class="about-h1" id="p">Certifications</h1>                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                  <div class="carousel-inner">
+                
+                    <div class="carousel-item active">
+                      <img src="images/certificate/Coginizant_Agile_methodology_cert.jpg"  class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="images/certificate/soft skill.png"  class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="images/certificate/python_basic certificate.jpg"  class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="images/certificate/TCS _ION .jpg"  class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="images/certificate/sql_basic certificate (1).jpg"  class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="images/certificate/DSA certificate .jpg"  class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/certificate/problem_solving_basic certificate (2)_page-0001.jpg"  class="d-block w-100" alt="...">
+                  </div>
+                 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden" style="color:#000000">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </center>
+          </div>
+          </div>
+        </div>
+      </div>
+<br>
+      <hr style="z-index: -9;">
+<!-- ----------project------------------------------->
+
+<div id="projects">
+  <div class="container">
+    <h1 class="about-h1" id="p">Projects</h1>
+    <div class="project-list">
+      <div class="pro">
+        <img src="./images/sign.jpg">
+        <div class="description">
+          <h3>Sign Language Recognizer</h3>
+          <p>It converts our real time sign Language into text using CNN models</p>
+         <a href="https://github.com/rameshkanna3/Sign-Language-Recognizer"target="-blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      
+      </div>
+      <div class="pro">
+        <img src="./images/search.jpg" alt="">
+        <div class="description">
+          <h3>Image Search Using Unsplash API</h3>
+          <p>Based On user request<br>Images will be fetched from Unsplash API and display it.</p>
+         <a href="https://rameshsearchapp.netlify.app/"target="-blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+      
+        </div>
+      
+      </div>
+      <div class="pro" id="p3">
+        <img src="./images/website.jpg">
+        	<div class="description">
+		<h3>My Personal Porfolio</h3>
+		<p>A Static site which shows About me,my skills and certications gained</p>
+    <a href="https://github.com/rameshkanna3/Sign-Language-Recognizer" target="-blank"> <i class="fa-solid fa-up-right-from-square"></i></a>
+	</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<hr style="z-index: -9;">
+<!-- --------------contact--------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-icon">
+        <h1 class="about-h1" id="con-t">Contact Me</h1>
+        <p><i class="fa-regular fa-phone"></i><a href="tel://9080491744" style="text-decoration: none;color: aliceblue;">9080491744</a></p>
+        <p><i class="fa-solid fa-envelope"></i><a href="mailto:srameshkanna3@gmail.com" style="text-decoration: none;color: aliceblue;">srameshkanna3@gmail.com</a></p>
+     <div class="social-icon">
+      <a href="https://www.instagram.com/_____ramesh.___/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/Ramesh2002614?t=eh_lt15EiTGoTNG-JOJt0w&s=08"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/ramesh-kanna/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/rameshkanna3"><i class="fa-brands fa-github"></i></a>
+     </div>
+     </div>
+      <div class="contact-form">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <textarea name="Message" rows="6"placeholder="Your Message..."></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+  </div>
+  </div>
+  <div class="copyrights">
+    <center>
+    <p>Copyright © 2023. All rights reserved @ Ramesh Kanna</p>
+  </center>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
 </html>

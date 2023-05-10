@@ -11,7 +11,7 @@
   --wht-color:#ffffff;
   --about-color:#ababab;
 }
-html{
+*{
   scroll-behavior: smooth;
 }
 body{

@@ -37,11 +37,12 @@ body {
 }
 nav {
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   overflow: hidden;
-  /* height: 60px; */
+  /* height: 50px; */
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +53,6 @@ nav ul li {
   display: inline-block;
   list-style: none;
   padding-top: 7px;
-
   margin: 10px 20px;
 }
 nav ul li a {
@@ -220,6 +220,7 @@ nav ul li a:hover::after {
 }
 .carousel-inner img {
   border-radius: 10px;
+  box-shadow: 0 0 40px #ff004f;
 }
 .carousel-control-prev,
 .carousel-control-next {
